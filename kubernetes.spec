@@ -33,7 +33,6 @@ Source115:      kubernetes.conf
 
 BuildRequires:  go-bindata
 BuildRequires:  golang >= 1.2-7
-BuildRequires:  go-md2man
 BuildRequires:  rsync
 BuildRequires:  systemd
 
