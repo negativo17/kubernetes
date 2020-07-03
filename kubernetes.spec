@@ -4,7 +4,7 @@
 %global module kube-proxy kube-apiserver kube-controller-manager kubelet kubeadm kube-scheduler kubectl
 
 Name:           kubernetes
-Version:        1.18.4
+Version:        1.18.5
 Release:        1%{?dist}
 Summary:        Production-Grade Container Scheduling and Management
 License:        ASL 2.0
@@ -250,6 +250,9 @@ fi
 %{_datadir}/bash-completion/completions/kubectl
 
 %changelog
+* Fri Jul 03 2020 Simone Caronni <negativo17@gmail.com> - 1.18.5-1
+- Update to 1.18.5.
+
 * Tue Jun 23 2020 Simone Caronni <negativo17@gmail.com> - 1.18.4-1
 - Update to 1.18.4.
 
