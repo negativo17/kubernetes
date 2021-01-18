@@ -4,7 +4,7 @@
 %global module kube-proxy kube-apiserver kube-controller-manager kubelet kubeadm kube-scheduler kubectl
 
 Name:           kubernetes
-Version:        1.19.4
+Version:        1.20.2
 Release:        1%{?dist}
 Summary:        Production-Grade Container Scheduling and Management
 License:        ASL 2.0
@@ -32,7 +32,7 @@ Source114:      kubeadm.conf
 Source115:      kubernetes.conf
 
 BuildRequires:  go-bindata
-BuildRequires:  golang >= 1.2-7
+BuildRequires:  golang >= 1.15.0
 BuildRequires:  rsync
 BuildRequires:  systemd
 
@@ -250,6 +250,9 @@ fi
 %{_datadir}/bash-completion/completions/kubectl
 
 %changelog
+* Mon Jan 18 2021 Simone Caronni <negativo17@gmail.com> - 1.20.2-1
+- Update to 1.20.2.
+
 * Fri Dec 04 2020 Simone Caronni <negativo17@gmail.com> - 1.19.4-1
 - Update to 1.19.4.
 
